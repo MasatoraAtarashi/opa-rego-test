@@ -1,0 +1,37 @@
+{
+  "Path": "main.go",
+  "FileName": "main.go",
+  "DirName": ".",
+  "Node": {
+    "Doc": {
+      "List": [
+        {
+          "Slash": 31,
+          "Text": "// Valid is valid"
+        }
+      ]
+    },
+    "Recv": null,
+    "Name": {
+      "NamePos": 54,
+      "Name": "Valid",
+      "Obj": null
+    },
+    "Type": {
+      "Func": 49,
+      "TypeParams": null,
+      "Params": {
+        "Opening": 59,
+        "List": [],
+        "Closing": 60
+      },
+      "Results": null
+    },
+    "Body": {
+      "Lbrace": 64,
+      "List": [],
+      "Rbrace": 65
+    }
+  },
+  "Kind": "FuncDecl"
+}

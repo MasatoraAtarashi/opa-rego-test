@@ -2,8 +2,7 @@ package main
 
 func main() {}
 
-type Test struct{}
-
-func (t Test) Valid() {}
-
-func (tt Test) Invalid() {}
+// Valid is valid
+func Valid()   {}
+func valid()   {}
+func Invalid() {}

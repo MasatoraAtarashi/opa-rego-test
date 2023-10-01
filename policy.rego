@@ -14,17 +14,37 @@ fail[res] {
 }
 
 # メソッドのレシーバ名は1文字とする
+#fail[res] {
+#    input.Kind == "FuncDecl"
+#    input.Node.Recv != null
+#    count(input.Node.Recv.List[x].Names[y].Name) != 1
+#
+#    res := {
+#        "msg": "method receiver name should be 1 character",
+#        "pos": input.Node.Recv.List[x].Names[y].NamePos,
+#        "sev": "ERROR"
+#    }
+#}
+
+# Publicな関数にはコメントをつける
 fail[res] {
     input.Kind == "FuncDecl"
-    input.Node.Recv != null
-    count(input.Node.Recv.List[x].Names[y].Name) != 1
+    is_uppercase(substring(input.Node.Name.Name, 0, 1))
+    input.Node.Doc == null
 
     res := {
-        "msg": "method receiver name should be 1 character",
-        "pos": input.Node.Recv.List[x].Names[y].NamePos,
+        "msg": "public function should have comment",
+        "pos": input.Node.Name.NamePos,
         "sev": "ERROR"
     }
 }
+
+is_uppercase(str) {
+    str == upper(str)
+}
+
+# handler pkg以外がechoやhttp pkgに依存することを禁止する
+
 
 
 # handler pkg以外がechoやhttp pkgに依存することを禁止する
@@ -37,4 +57,3 @@ fail[res] {
 # データベース操作の関数名はCreate/Update/Get/BatchGet/List/Deleteのどれか
 # 真偽値変数は、名詞の場合はis接頭辞を、動詞の場合は過去分詞形
 # 標準のjsonライブラリでjsonの変換をしない(easyjson等を使用する)
-# Publicな関数にはコメントをつける
