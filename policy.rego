@@ -1,17 +1,17 @@
 package goast
 
 # fmt.Printlnを禁止する
-fail[res] {
-    input.Kind == "ExprStmt"
-    input.Node.X.Fun.X.Name == "fmt"
-    input.Node.X.Fun.Sel.Name == "Println"
-
-    res := {
-        "msg": "fmt.Println is not allowed",
-        "pos": input.Node.X.Fun.X.NamePos,
-        "sev": "ERROR"
-    }
-}
+#fail[res] {
+#    input.Kind == "ExprStmt"
+#    input.Node.X.Fun.X.Name == "fmt"
+#    input.Node.X.Fun.Sel.Name == "Println"
+#
+#    res := {
+#        "msg": "fmt.Println is not allowed",
+#        "pos": input.Node.X.Fun.X.NamePos,
+#        "sev": "ERROR"
+#    }
+#}
 
 # メソッドのレシーバ名は1文字とする
 #fail[res] {
@@ -27,24 +27,34 @@ fail[res] {
 #}
 
 # Publicな関数にはコメントをつける
+#fail[res] {
+#    input.Kind == "FuncDecl"
+#    is_uppercase(substring(input.Node.Name.Name, 0, 1))
+#    input.Node.Doc == null
+#
+#    res := {
+#        "msg": "public function should have comment",
+#        "pos": input.Node.Name.NamePos,
+#        "sev": "ERROR"
+#    }
+#}
+
+#is_uppercase(str) {
+#    str == upper(str)
+#}
+
+# handler pkg以外がhttp pkgに依存することを禁止する
 fail[res] {
-    input.Kind == "FuncDecl"
-    is_uppercase(substring(input.Node.Name.Name, 0, 1))
-    input.Node.Doc == null
+    input.Kind == "File"
+    input.DirName != "internal/handler"
+    input.Node.Imports[x].Path.Value == "\"net/http\""
 
     res := {
-        "msg": "public function should have comment",
-        "pos": input.Node.Name.NamePos,
+        "msg": "handler pkg should not depend on http pkg",
+        "pos": input.Node.Imports[x].Path.ValuePos,
         "sev": "ERROR"
     }
 }
-
-is_uppercase(str) {
-    str == upper(str)
-}
-
-# handler pkg以外がechoやhttp pkgに依存することを禁止する
-
 
 
 # handler pkg以外がechoやhttp pkgに依存することを禁止する

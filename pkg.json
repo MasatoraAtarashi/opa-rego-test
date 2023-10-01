@@ -1,0 +1,587 @@
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "Doc": null,
+    "Package": 1,
+    "Name": {
+      "NamePos": 9,
+      "Name": "service",
+      "Obj": null
+    },
+    "Decls": [
+      {
+        "Doc": null,
+        "TokPos": 18,
+        "Tok": 75,
+        "Lparen": 0,
+        "Specs": [
+          {
+            "Doc": null,
+            "Name": null,
+            "Path": {
+              "ValuePos": 25,
+              "Kind": 9,
+              "Value": "\"net/http\""
+            },
+            "Comment": null,
+            "EndPos": 0
+          }
+        ],
+        "Rparen": 0
+      },
+      {
+        "Doc": null,
+        "Recv": null,
+        "Name": {
+          "NamePos": 42,
+          "Name": "service",
+          "Obj": null
+        },
+        "Type": {
+          "Func": 37,
+          "TypeParams": null,
+          "Params": {
+            "Opening": 49,
+            "List": [],
+            "Closing": 50
+          },
+          "Results": null
+        },
+        "Body": {
+          "Lbrace": 52,
+          "List": [
+            {
+              "Lhs": [
+                {
+                  "NamePos": 55,
+                  "Name": "_",
+                  "Obj": null
+                },
+                {
+                  "NamePos": 58,
+                  "Name": "_",
+                  "Obj": null
+                }
+              ],
+              "TokPos": 60,
+              "Tok": 42,
+              "Rhs": [
+                {
+                  "Fun": {
+                    "X": {
+                      "NamePos": 62,
+                      "Name": "http",
+                      "Obj": null
+                    },
+                    "Sel": {
+                      "NamePos": 67,
+                      "Name": "Get",
+                      "Obj": null
+                    }
+                  },
+                  "Lparen": 70,
+                  "Args": [
+                    {
+                      "ValuePos": 71,
+                      "Kind": 9,
+                      "Value": "\"http://example.com/\""
+                    }
+                  ],
+                  "Ellipsis": 0,
+                  "Rparen": 92
+                }
+              ]
+            }
+          ],
+          "Rbrace": 94
+        }
+      }
+    ],
+    "FileStart": 1,
+    "FileEnd": 96,
+    "Scope": {
+      "Outer": null,
+      "Objects": {
+        "service": {
+          "Kind": 5,
+          "Name": "service",
+          "Decl": {
+            "Doc": null,
+            "Recv": null,
+            "Name": {
+              "NamePos": 42,
+              "Name": "service",
+              "Obj": null
+            },
+            "Type": {
+              "Func": 37,
+              "TypeParams": null,
+              "Params": {
+                "Opening": 49,
+                "List": [],
+                "Closing": 50
+              },
+              "Results": null
+            },
+            "Body": {
+              "Lbrace": 52,
+              "List": [
+                {
+                  "Lhs": [
+                    {
+                      "NamePos": 55,
+                      "Name": "_",
+                      "Obj": null
+                    },
+                    {
+                      "NamePos": 58,
+                      "Name": "_",
+                      "Obj": null
+                    }
+                  ],
+                  "TokPos": 60,
+                  "Tok": 42,
+                  "Rhs": [
+                    {
+                      "Fun": {
+                        "X": {
+                          "NamePos": 62,
+                          "Name": "http",
+                          "Obj": null
+                        },
+                        "Sel": {
+                          "NamePos": 67,
+                          "Name": "Get",
+                          "Obj": null
+                        }
+                      },
+                      "Lparen": 70,
+                      "Args": [
+                        {
+                          "ValuePos": 71,
+                          "Kind": 9,
+                          "Value": "\"http://example.com/\""
+                        }
+                      ],
+                      "Ellipsis": 0,
+                      "Rparen": 92
+                    }
+                  ]
+                }
+              ],
+              "Rbrace": 94
+            }
+          },
+          "Data": null,
+          "Type": null
+        }
+      }
+    },
+    "Imports": [
+      {
+        "Doc": null,
+        "Name": null,
+        "Path": {
+          "ValuePos": 25,
+          "Kind": 9,
+          "Value": "\"net/http\""
+        },
+        "Comment": null,
+        "EndPos": 0
+      }
+    ],
+    "Unresolved": [
+      {
+        "NamePos": 62,
+        "Name": "http",
+        "Obj": null
+      }
+    ],
+    "Comments": [],
+    "GoVersion": ""
+  },
+  "Kind": "File"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "NamePos": 9,
+    "Name": "service",
+    "Obj": null
+  },
+  "Kind": "Ident"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "Doc": null,
+    "TokPos": 18,
+    "Tok": 75,
+    "Lparen": 0,
+    "Specs": [
+      {
+        "Doc": null,
+        "Name": null,
+        "Path": {
+          "ValuePos": 25,
+          "Kind": 9,
+          "Value": "\"net/http\""
+        },
+        "Comment": null,
+        "EndPos": 0
+      }
+    ],
+    "Rparen": 0
+  },
+  "Kind": "GenDecl"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "Doc": null,
+    "Name": null,
+    "Path": {
+      "ValuePos": 25,
+      "Kind": 9,
+      "Value": "\"net/http\""
+    },
+    "Comment": null,
+    "EndPos": 0
+  },
+  "Kind": "ImportSpec"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "ValuePos": 25,
+    "Kind": 9,
+    "Value": "\"net/http\""
+  },
+  "Kind": "BasicLit"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "Doc": null,
+    "Recv": null,
+    "Name": {
+      "NamePos": 42,
+      "Name": "service",
+      "Obj": null
+    },
+    "Type": {
+      "Func": 37,
+      "TypeParams": null,
+      "Params": {
+        "Opening": 49,
+        "List": [],
+        "Closing": 50
+      },
+      "Results": null
+    },
+    "Body": {
+      "Lbrace": 52,
+      "List": [
+        {
+          "Lhs": [
+            {
+              "NamePos": 55,
+              "Name": "_",
+              "Obj": null
+            },
+            {
+              "NamePos": 58,
+              "Name": "_",
+              "Obj": null
+            }
+          ],
+          "TokPos": 60,
+          "Tok": 42,
+          "Rhs": [
+            {
+              "Fun": {
+                "X": {
+                  "NamePos": 62,
+                  "Name": "http",
+                  "Obj": null
+                },
+                "Sel": {
+                  "NamePos": 67,
+                  "Name": "Get",
+                  "Obj": null
+                }
+              },
+              "Lparen": 70,
+              "Args": [
+                {
+                  "ValuePos": 71,
+                  "Kind": 9,
+                  "Value": "\"http://example.com/\""
+                }
+              ],
+              "Ellipsis": 0,
+              "Rparen": 92
+            }
+          ]
+        }
+      ],
+      "Rbrace": 94
+    }
+  },
+  "Kind": "FuncDecl"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "NamePos": 42,
+    "Name": "service",
+    "Obj": null
+  },
+  "Kind": "Ident"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "Func": 37,
+    "TypeParams": null,
+    "Params": {
+      "Opening": 49,
+      "List": [],
+      "Closing": 50
+    },
+    "Results": null
+  },
+  "Kind": "FuncType"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "Opening": 49,
+    "List": [],
+    "Closing": 50
+  },
+  "Kind": "FieldList"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "Lbrace": 52,
+    "List": [
+      {
+        "Lhs": [
+          {
+            "NamePos": 55,
+            "Name": "_",
+            "Obj": null
+          },
+          {
+            "NamePos": 58,
+            "Name": "_",
+            "Obj": null
+          }
+        ],
+        "TokPos": 60,
+        "Tok": 42,
+        "Rhs": [
+          {
+            "Fun": {
+              "X": {
+                "NamePos": 62,
+                "Name": "http",
+                "Obj": null
+              },
+              "Sel": {
+                "NamePos": 67,
+                "Name": "Get",
+                "Obj": null
+              }
+            },
+            "Lparen": 70,
+            "Args": [
+              {
+                "ValuePos": 71,
+                "Kind": 9,
+                "Value": "\"http://example.com/\""
+              }
+            ],
+            "Ellipsis": 0,
+            "Rparen": 92
+          }
+        ]
+      }
+    ],
+    "Rbrace": 94
+  },
+  "Kind": "BlockStmt"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "Lhs": [
+      {
+        "NamePos": 55,
+        "Name": "_",
+        "Obj": null
+      },
+      {
+        "NamePos": 58,
+        "Name": "_",
+        "Obj": null
+      }
+    ],
+    "TokPos": 60,
+    "Tok": 42,
+    "Rhs": [
+      {
+        "Fun": {
+          "X": {
+            "NamePos": 62,
+            "Name": "http",
+            "Obj": null
+          },
+          "Sel": {
+            "NamePos": 67,
+            "Name": "Get",
+            "Obj": null
+          }
+        },
+        "Lparen": 70,
+        "Args": [
+          {
+            "ValuePos": 71,
+            "Kind": 9,
+            "Value": "\"http://example.com/\""
+          }
+        ],
+        "Ellipsis": 0,
+        "Rparen": 92
+      }
+    ]
+  },
+  "Kind": "AssignStmt"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "NamePos": 55,
+    "Name": "_",
+    "Obj": null
+  },
+  "Kind": "Ident"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "NamePos": 58,
+    "Name": "_",
+    "Obj": null
+  },
+  "Kind": "Ident"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "Fun": {
+      "X": {
+        "NamePos": 62,
+        "Name": "http",
+        "Obj": null
+      },
+      "Sel": {
+        "NamePos": 67,
+        "Name": "Get",
+        "Obj": null
+      }
+    },
+    "Lparen": 70,
+    "Args": [
+      {
+        "ValuePos": 71,
+        "Kind": 9,
+        "Value": "\"http://example.com/\""
+      }
+    ],
+    "Ellipsis": 0,
+    "Rparen": 92
+  },
+  "Kind": "CallExpr"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "X": {
+      "NamePos": 62,
+      "Name": "http",
+      "Obj": null
+    },
+    "Sel": {
+      "NamePos": 67,
+      "Name": "Get",
+      "Obj": null
+    }
+  },
+  "Kind": "SelectorExpr"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "NamePos": 62,
+    "Name": "http",
+    "Obj": null
+  },
+  "Kind": "Ident"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "NamePos": 67,
+    "Name": "Get",
+    "Obj": null
+  },
+  "Kind": "Ident"
+}
+{
+  "Path": "internal/service/service.go",
+  "FileName": "service.go",
+  "DirName": "internal/service",
+  "Node": {
+    "ValuePos": 71,
+    "Kind": 9,
+    "Value": "\"http://example.com/\""
+  },
+  "Kind": "BasicLit"
+}
