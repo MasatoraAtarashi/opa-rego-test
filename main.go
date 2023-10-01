@@ -1,8 +1,6 @@
 package main
 
-func main() {
-	//fmt.Println("test")
-}
+func main() {}
 
 type Test struct{}
 

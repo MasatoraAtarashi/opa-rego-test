@@ -1,0 +1,52 @@
+{
+  "Path": "main.go",
+  "FileName": "main.go",
+  "DirName": ".",
+  "Node": {
+    "Doc": null,
+    "Recv": {
+      "Opening": 56,
+      "List": [
+        {
+          "Doc": null,
+          "Names": [
+            {
+              "NamePos": 57,
+              "Name": "t",
+              "Obj": null
+            }
+          ],
+          "Type": {
+            "NamePos": 59,
+            "Name": "Test",
+            "Obj": null
+          },
+          "Tag": null,
+          "Comment": null
+        }
+      ],
+      "Closing": 63
+    },
+    "Name": {
+      "NamePos": 65,
+      "Name": "Valid",
+      "Obj": null
+    },
+    "Type": {
+      "Func": 51,
+      "TypeParams": null,
+      "Params": {
+        "Opening": 70,
+        "List": [],
+        "Closing": 71
+      },
+      "Results": null
+    },
+    "Body": {
+      "Lbrace": 73,
+      "List": [],
+      "Rbrace": 74
+    }
+  },
+  "Kind": "FuncDecl"
+}
